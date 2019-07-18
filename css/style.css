@@ -1,0 +1,27 @@
+/* Couleure de fond page acceuil.php */
+body{
+   background: #093028;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to left, #237A57, #093028);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to left, #237A57, #093028) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+!important;
+}
+/* Barre de navigation acceuil.php */
+nav{
+   
+   text-transform: uppercase;
+   color: green;
+   font-family: arial;
+   letter-spacing: 1px;
+   box-shadow: -4px 4px 0 black;
+}
+
+
+/* Slider  */
+
+/* Footer  */

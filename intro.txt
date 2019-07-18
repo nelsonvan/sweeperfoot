@@ -1,0 +1,97 @@
+----------------------------SITE DE FIN DE FORMATION--------------------------------
+
+Nom du devellopeur:
+
+Prenom:
+
+email:
+
+                   ------------------------------------
+
+                               SWEEPERFOOTBALL
+
+                   ------------------------------------ 
+
+
+
+
+
+ nom de domaine:www.sweeperfootball.com
+
+
+ Objectif:
+
+
+
+ I_ Créér un site dynamique à partir des outils pédagogiques transmis pendant notre formation qui a duré 10 mois.
+
+
+   A_ FRONT
+
+       1_ HTML pure + CSS 
+
+       2_ JavaScript + Jquery + Ajax....
+
+       3_ Boostrap
+
+   B_ Back 
+
+       1_ PHP PROCEDURAL 
+
+       2_ PHP POO ORIENTE OBJET 
+
+       3_ SYMFONY
+
+
+
+
+
+
+   A FRONT               ------------------------------
+
+                                    ZONNING
+
+                          ------------------------------ 
+
+
+
+
+
+                           sweeperfootball 
+
+
+
+Accueil 
+
+
+   1_ Actualité
+
+
+       * transfert 
+
+       * divers
+
+       * Foot
+
+           _catégorie
+
+
+               1_ National -> 
+
+                         .League 1
+
+               2_ International 
+
+                         .leagues 
+
+                         .champions league 
+
+                         .coupe du monde 
+
+                         .coupe d'Afrique des nation
+
+
+Qui suis-je -> redirigé vers ton portfolio.
+
+
+Portfolio
