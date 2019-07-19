@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Lien vers mon fichier CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Lien CDN BootStrap -->
      <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-C++cugH8+Uf86JbNOnQoBweHHAe/wVKN/mb0lTybu/NZ9sEYbd+BbbYtNpWYAsNP" crossorigin="anonymous">
     
     
@@ -21,26 +22,26 @@
    <div class="container-fluid">
        <header>
        <nav class="navbar navbar-expand-lg navbar-info bg-dark mt-4">
-  <a class="navbar-brand text-dark" href="#">SweeperFootball</a>
+  <a class="navbar-brand text-success" href="#">SweeperFootball</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link text-light ml-4" href="#">Acceuil <span class="sr-only">Acceuil</span></a>
+        <a class="nav-link text-light ml-4" href="acceuil.php">Acceuil <span class="sr-only">Acceuil</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-light ml-4" href="#">Actualité</a>
+        <a class="nav-link text-light ml-4" href="actualite.php">Actualité</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-light ml-4" href="#">Catégorie</a>
+        <a class="nav-link text-light ml-4" href="#"><?php require_once('nav.secondaire.inc.php');?></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-light ml-4" href="#">Qui-suis-je ?</a>
+        <a class="nav-link text-light ml-4" href="qui-suis-je.php">Qui-suis-je ?</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-light ml-4" href="#">Inscription</a>
+        <a class="nav-link text-light ml-4" href="inscription.php">Inscription</a>
       </li>
     </ul>
     <form class="form-inline my-4 my-lg-0 offset-md-5">
