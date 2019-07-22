@@ -1,15 +1,15 @@
 /* Couleure de fond page acceuil.php */
 body{
-   background: #093028;  /* fallback for old browsers */
-   background: -webkit-linear-gradient(to left, #237A57, #093028);  /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to left, #237A57, #093028) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #093028;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #237A57, #093028);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #237A57, #093028) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-!important;
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  !important;
 }
 /* Barre de navigation acceuil.php */
 nav{
@@ -26,10 +26,6 @@ nav{
 
 
 
-body {
-   background-color:#222;
- }
- 
  .carousel {
    position:relative;
    width:400px;
@@ -127,10 +123,28 @@ background-color: #02396e;
 }
 #menu-vertical ul {
   position: absolute;
-  left:-999em;
+  left:-967em;
+  
 }
 #menu-vertical li:hover ul {
   top: 0;
   left: 180px;
 }
-/* Footer  */
+li{
+  list-style:none;
+}
+
+.color-link::after{
+  content:  '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #00a963;
+  transition: width .2s;
+  
+}
+.color-link:hover::after{
+   width: 100%;
+   transition: width .2s;
+
+}

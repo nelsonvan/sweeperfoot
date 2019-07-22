@@ -1,3 +1,17 @@
+<?php require_once('inc/nav.secondaire.inc.php');?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
 <?php 
 require_once('inc/init.inc.php');
 extract($_POST);
@@ -19,11 +33,13 @@ $confMdpError = '';
         
     }
  ?>
-<?php require_once('inc/header.inc.php');?>
+
+
+
 
 
 <form  method="POST">
-<div class="container col-md-5 mt-4">
+<div class="container col-md-4 mt-5">
   <div class="form-group">
     <label for="exampleInputPassword1"></label>
     <input type="text" class="form-control" id="exampleInputfirstName" placeholder="Prénom" name="userFirstName">
@@ -47,5 +63,11 @@ $confMdpError = '';
   <button  class="btn btn-primary offset-md-5" value="Envoyer" type="submit">Inscription</button>
 </form>
 </div>
+<?php require_once('inc/footer.secondaire.inc.php');?>
+
+ 
+
+
+
  
 

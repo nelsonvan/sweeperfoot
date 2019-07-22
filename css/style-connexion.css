@@ -1,0 +1,46 @@
+body{
+        background-image: url('img/terrain2.jpg');
+        background: #093028;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #28a741, #093028);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #28a741, #093028) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          
+        
+      !important;
+
+}
+nav{
+   
+    text-transform: uppercase;
+    color: green;
+    font-family: arial;
+    letter-spacing: 1px;
+    box-shadow: -4px 4px 0 #27a340;
+    background-color: #093028;
+    top: 30px;
+ }
+/* Footer secondaire */
+ /* Background du footer ne fonctionne qu'avec le chemin complet du selecteur css */
+ html body div.container.col-md-4.mt-5 div.footer footer.bg-info.text-white.text-center.p-1.fixed-bottom{
+    background-color:#0a3329!important;
+ }
+ html body div.conainer-fluid footer.bg-danger.text-white.text-center.p-1.fixed-bottom{
+    background-color:#27a340!important;
+ }
+ /* Nav secondaire */
+.color-link::after{
+    content:  '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #00a963;
+    transition: width .2s;
+    
+ }
+ .color-link:hover::after{
+     width: 100%;
+     transition: width .2s;
+
+ }
+ /* Formulaire de connexion */
+
+

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Lien vers mon fichier CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-acceuil.css">
     <!-- Lien CDN BootStrap -->
      <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-C++cugH8+Uf86JbNOnQoBweHHAe/wVKN/mb0lTybu/NZ9sEYbd+BbbYtNpWYAsNP" crossorigin="anonymous">
     
@@ -29,25 +29,36 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link text-light ml-4" href="acceuil.php">Acceuil <span class="sr-only">Acceuil</span></a>
+        <a class="color-link nav-link text-light ml-3" href="acceuil.php">Acceuil <span class="sr-only">Acceuil</span></a>
       </li>
+    
+      <li class="nav-item active">
+        <a class="color-link nav-link text-light ml-3" href="actualite.php">Actualite <span class="sr-only">Aactualite</span></a>
+      </li>
+    
+        <!-- <li class="nav-item">
+          <a class="nav-link text-light ml-4" href="#"><></a>
+        </li> -->
       <li class="nav-item">
-        <a class="nav-link text-light ml-4" href="actualite.php">Actualité</a>
+        <a class="color-link nav-link text-light ml-3" href="qui-suis-je.php">Contact</a>
       </li>
+      <div class="categorie">
       <li class="nav-item">
-        <a class="nav-link text-light ml-4" href="#"><?php require_once('nav.secondaire.inc.php');?></a>
+        <a class="color-link nav-link text-light ml-3" href="qui-suis-je.php">Categorie</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link text-light ml-4" href="qui-suis-je.php">Qui-suis-je ?</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-light ml-4" href="inscription.php">Inscription</a>
-      </li>
+      </div>
     </ul>
-    <form class="form-inline my-4 my-lg-0 offset-md-5">
+    <form class="form-inline my-4 my-lg-0 offset-md-4">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Recherche</button>
     </form>
+    <li class="nav-item">
+        <a class=" color-link nav-link text-light ml-4" href="inscription.php">Inscription</a>
+      </li>
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="color-link nav-link text-light ml-4" href="connexion.php">Connexion <span class="sr-only">Connexion</span></a>
+      </li>
   </div>
 </nav> 
 </header>
