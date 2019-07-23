@@ -42,5 +42,51 @@ nav{
 
  }
  /* Formulaire de connexion */
+.border{
+   width: 100px;
+   height: 10px;
+   background: #093028;
+   margin: 40px auto;
+}
+form.mt-5{
+ max-width: 600px;
+ margin: 0 auto;
+ padding: 0 10px;
+ overflow: hidden;
+}
 
+ #exampleInputPseudo, #exampleInputEmail1, #exampleInputPw{
+   background: #0a3329;
+   border: 0;
+   padding: 20px 40px;
+   outline: none;
+   color: #ddd;
+   transition: 0.5s;
+} 
+#exampleInputPseudo:focus, #exampleInputEmail1:focus, #exampleInputPw:focus{
+   box-shadow: 0 0 10px 4px  #00912e;
+}
+.btn{
+   border: 0;
+   background: #00912e!important;
+   color: #fff!important;
+   padding: 5px 25px!important;
+   border-radius: 20px!important;
+   cursor: pointer;
+   transition: 0.5s;
+}
+.btn:hover
+{
+ 
+ background:  rgb(212, 38, 38)!important;
 
+}
+/* formulaire d'inscription */
+#exampleInputfirstName{
+   background: #0a3329;
+   border: 0;
+   padding: 20px 40px;
+   outline: none;
+   color: #ddd;
+   transition: 0.5s;
+}

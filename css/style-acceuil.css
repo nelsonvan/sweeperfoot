@@ -148,3 +148,15 @@ li{
    transition: width .2s;
 
 }
+/* Page article */
+div.row1, div.row2{
+  width: 100vw!important;
+  height: 33vh!important;
+  
+  
+}
+section.sec1, section.sec2{
+  background: #226c8a!important;
+  margin: 0 !important;
+}
+
