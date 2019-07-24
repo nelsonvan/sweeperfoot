@@ -39,21 +39,22 @@ if($_POST)
     }
 
     // Inserion en base données
-    if (empty($userFirstName) && empty($userPseuudo) && empty($userEmail) && empty($userPw) && empty($userPwConf))
+    if (empty($userFirstName) && empty($userPseudo) && empty($userEmail) && empty($userPw) && empty($userPwConf))
     {
       foreach ($_POST as $indice => $valeur)
       {
         $_POST[$indice] = htmlspecialchars($valeur, ENT_QUOTES);
       }
-
+    
       // Requete d'insertion
-    $newUser = $bdd->prepare("INSERT INTO user(userFirstName, userPseudo, userEmail, userPw, userPwConf) VALUES (:userFirstName, :userPseudo, :userEmail, :userPw, :userPwConf)");
+    $newUser = $bdd->prepare("INSERT INTO user(userFirstName, userEmail, userPw, userPseudo, userPwConf) VALUES (:userFirstName, :userEmail, :userPw, :userPseudo, :userPwConf)");
 
-    $newClient->bindValue(":userFirstName", $userFirstName, PDO::PARAM_STR);
-    $newClient->bindValue(":userPseudo", $userPseudo, PDO::PARAM_STR);
-    $newClient->bindValue(":userEmail", $userEmail, PDO::PARAM_STR);
-    $newClient->bindValue(":userPw", $userPw, PDO::PARAM_STR);
-    $newClient->bindValue(":userPwConf", $userPwConf, PDO::PARAM_STR);
+    $newUser->bindValue(":userFirstName", $userFirstName, PDO::PARAM_STR);
+    $newUser->bindValue(":userEmail", $userEmail, PDO::PARAM_STR);
+    $newUser->bindValue(":userPw", $userPw, PDO::PARAM_STR);
+    $newUser->bindValue(":userPseudo", $userPseudo, PDO::PARAM_STR);
+    $newUser->bindValue(":userPwConf", $userPwConf, PDO::PARAM_STR);
+    $newUser->execute();
 
     }
   } // Fin du if($_POST)

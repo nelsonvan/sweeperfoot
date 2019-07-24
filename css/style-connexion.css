@@ -90,3 +90,6 @@ form.mt-5{
    color: #ddd;
    transition: 0.5s;
 }
+html body b{
+   color: red;
+}
