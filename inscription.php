@@ -2,6 +2,15 @@
 require_once('inc/nav.secondaire.inc.php');
 
 require_once('inc/init.inc.php');
+
+require_once('php/function.php');
+
+
+if(internauteEstConnecte())
+{
+  header("Location: acceuil.php");
+}
+
 extract($_POST);
 // Variable de verifiaction des champs
 $firstNameError = '';
@@ -9,6 +18,7 @@ $pseudoError = '';
 $emailError = '';
 $mdpError = '';
 $confMdpError = '';
+$msgValidate = '';
 
 
 if($_POST)
@@ -20,7 +30,7 @@ if($_POST)
       $firstNameError .= '<small class="text-danger"> ** Saisissez un prenom entre 2 et 60 clastéres</small>';
     }
     
-    if (empty($userPseudo) || iconv_strlen($userPseudo) < 2 || iconv_strlen($userFirstName) > 60)
+    if (empty($userPseudo) || iconv_strlen($userPseudo) < 2 || iconv_strlen($userPseudo) > 60)
     {
       $pseudoError .= '<small class="text-danger"> ** Saisissez un Pseudo entre 2 et 60 clastéres</small>';
     }
@@ -39,7 +49,7 @@ if($_POST)
     }
 
     // Inserion en base données
-    if (empty($userFirstName) && empty($userPseudo) && empty($userEmail) && empty($userPw) && empty($userPwConf))
+    if (empty($firstNameError) && empty($pseudoError ) && empty($emailError) && empty($mdpError) && empty($confMdpError))
     {
       foreach ($_POST as $indice => $valeur)
       {
@@ -55,6 +65,7 @@ if($_POST)
     $newUser->bindValue(":userPseudo", $userPseudo, PDO::PARAM_STR);
     $newUser->bindValue(":userPwConf", $userPwConf, PDO::PARAM_STR);
     $newUser->execute();
+    $msgValidate = '<div class="alert alert-success">Votre Inscription a bien été enregistrer </div>';
 
     }
   } // Fin du if($_POST)
@@ -92,10 +103,11 @@ if($_POST)
 </header>
 <div class="container col-md-4 mt-5">
   <h1 class="text-center text-danger">Inscription</h1>
+  <?php echo $msgValidate; ?>
   <form class="mt-4"  method="POST">
   <div class="form-group mt-4">
  <?php echo $firstNameError; ?>
-    <input type="text" class="form-control" id="exampleInputfirstName" placeholder="Prénom" name="userFirstName">
+    <input type="text" class="form-control" id="exampleInputfirstName2" placeholder="Prénom" name="userFirstName">
   </div>
   <div class="form-group">
   <?php echo $firstNameError; ?>

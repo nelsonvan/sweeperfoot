@@ -158,5 +158,11 @@ div.row1, div.row2{
 section.sec1, section.sec2{
   background: #226c8a!important;
   margin: 0 !important;
+
 }
+.text-article{
+  /* margin-bottom: 50px!important; */
+}
+
+
 
