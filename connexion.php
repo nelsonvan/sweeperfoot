@@ -6,10 +6,11 @@ $emailError = '';
 $passwordError = '';
  // Pa
 
-//  if (internauteEstConnecte())
-//  {
-//    header("Location: acceuill.php");
-//  }
+ if (isset($_GET['action']) && $_GET['action'] == 'validate') {
+  $validate .= '<div class="col-md-6 offset-md-3 alert alert-success text-dark">Félicitations, vous etes inscrits sur le site. Vous pouvez dès a présent vous connecter</div>';
+}
+
+
 if($_POST){
 
   $resultat = $bdd->query("SELECT * FROM user");
@@ -55,6 +56,7 @@ if($_POST){
 </header>   
 <div class="container col-md-4 mt-5" style="color: white;">
  <h1 class="text-center text-danger">Connexion</h1>  
+ <?=  $validate ?>
  <div class="border"></div> 
 <form class="mt-5"  method="post" action="">
   <div class="form-group mt-2">
@@ -72,7 +74,7 @@ if($_POST){
   <?php echo  $passwordError; ?>
     <input type="password" class="form-control mt-2" id="exampleInputPw" placeholder="Mot de passe"  name="userPw">
   </div>
-  <button  class="btn  offset-md-5" value="Envoyer" type="submit">Connexion</button>
+  <button  class="btn  offset-md-5" value="Envoyer" type="submit" >Connexion</button>
 </form>
 </body>
 </html>

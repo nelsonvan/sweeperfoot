@@ -1,3 +1,12 @@
+<?php require_once('init.inc.php');?>
+
+
+<?php
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

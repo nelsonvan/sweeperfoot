@@ -9,7 +9,7 @@
       <img src="img/ligue1.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <a href="article.php"><img src="img/stade.jpg" class="d-block w-100" alt="..."></a>
+      <a href="article.php"><img src="img/fr.jpg" class="d-block w-100" alt="..."></a>
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">

@@ -40,14 +40,38 @@
           <a class="nav-link text-light ml-4" href="#"><></a>
         </li> -->
       <li class="nav-item">
-        <a class="color-link nav-link text-light ml-3" href="qui-suis-je.php">Contact</a>
+        <a class="color-link nav-link text-light ml-3" href="contact.php">Contact</a>
       </li>
       <div class="categorie">
-      <li class="nav-item">
-        <a class="color-link nav-link text-light ml-3" href="qui-suis-je.php">Categorie</a>
+      <li class="nav-item dropdown">
+     
+      <a class="nav-link <!--dropdown-toggle--> ml-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+<button class="btn btn-sm btn-outline-success hover" type="button">Categorie<i class="fas fa-arrow-alt-circle-down"></i></button>
+
+</a>
+
+<div class="dropdown-menu text text-center" aria-labelledby="navbarDropdown">
+
+<a class="dropdown-item" href="http://www.nova.fr/radionova/nova-la-nuit" target="_blank"><button class="btn btn-sm" type="button">Ligue 1</button></a>
+
+<a class="dropdown-item" href="http://player.radiomeuh.com/" target="_blank"><button class="btn btn-sm" type="button">Premier league</button></a>
+
+<a class="dropdown-item" href="http://www.djamradio.com/?lang=fr" target="_blank"><button class="btn btn-sm" type="button">Liga </button></a>
+
+<a class="dropdown-item" href="http://www.sing-sing-bis.org/results.php?kbps=Infinity" target="_blank"><button class="btn btn-sm" type="button">League des champions</button></a>
+
+<a class="dropdown-item" href="http://www.sing-sing-bis.org/results.php?kbps=Infinity" target="_blank"><button class="btn btn-sm" type="button">Coupe du monde</button></a>
+
+
+</div>
+
+</li>
       </li>
+      
       </div>
     </ul>
+    
     <form class="form-inline my-4 my-lg-0 offset-md-3">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Recherche</button>
@@ -61,5 +85,9 @@
       </li>
   </div>
 </nav> 
+<div class="container">
+  <h2 class="text-center mt-4">Welcome to SweeperFootball</h2>
+</div>
+
 </header>
    </div>
