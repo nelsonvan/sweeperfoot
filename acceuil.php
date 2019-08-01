@@ -11,6 +11,9 @@
     <div class="carousel-item">
       <a href="article.php"><img src="img/fr.jpg" class="d-block w-100" alt="..."></a>
     </div>
+    <div class="carousel-item">
+      <a href="article.php"><img src="img/coupe d'afrique.jpg" class="d-block w-100" alt="..."></a>
+    </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
