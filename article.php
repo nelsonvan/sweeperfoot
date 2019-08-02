@@ -1,19 +1,30 @@
-<?php require_once('inc/header.inc.php');?>
+<?php
+require_once('inc/header.inc.php');
+
+// requete de selection on recupere les articles de la  BDD
+$resultat = $bdd->query("SELECT * FROM articles");
+while($article = $resultat->fetch(PDO::FETCH_ASSOC)){
+
+  '<div class="main-section bg-transparent col-md-10 mt-2">';
+   $contenu .=   '<div class="card-container">';
+   $contenu .=      '<img src="img/'.$article['photo'].'" alt="" class="cardImage">';
+   $contenu .=       '<div class="card-text-container">';
+   $contenu .=      '<span class="card-span"></span>';
+   $contenu .=    '<h1 class="article-title">'.$article['title'].'</h1>';
+   $contenu .=       '<p class="article-descrip bg-transparent">'.$article['content'].'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit pariatur eos ipsum voluptate a animi placeat velit sapiente explicabo blanditiis? Pariatur ut in temporibus nesciunt voluptate doloremque cum, error quasi?</p>';
+   $contenu .=      '<a  href="#" target="_blank" class="read-more-button">Read More</a>';
+   $contenu .=     '</div>';
+   $contenu .=   '</div>';
+}
+
+?>
+
 
 <h1 class="text-center text-primary">articles</h1>
 
-    <div class="main-section bg-transparent col-md-8">
-        <div class="card-container">
-            <img src="img/fr.jpg" alt="" class="cardImage">
-            <div class="card-text-container">
-               <span class="card-span"></span>
-               <h1 class="article-title">Coupe du monde</h1>
-               <p class="article-descrip bg-transparent">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit pariatur eos ipsum voluptate a animi placeat velit sapiente explicabo blanditiis? Pariatur ut in temporibus nesciunt voluptate doloremque cum, error quasi?</p>
-               <a href="#" target="_blank" class="read-more-button">Read More</a>
-            </div>
-         </div>
+ 
 
-     </div>
+     <!-- </div>
     <div class="main-section bg-transparent col-md-8">
         <div class="card-container">
             <img src="img/coupe d'afrique.jpg" alt="" class="cardImage">
@@ -25,13 +36,16 @@
             </div>
          </div>
 
-     </div>
+     </div> -->
      <div class="menue col-md-8 offset-md-4">
       <section class="nav-article col-md-4 offset-md-8 bg-dark">
        
-         <p>lorem ipsum</p>
       </section>
      </div>
-
+     <section class="container">
+    <div class="row">
+        <?= $contenu; ?>
+    </div><!--  Fin row -->
+</section>
 
 <?php require_once('inc/footer.inc.php');?>

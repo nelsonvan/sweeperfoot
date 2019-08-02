@@ -16,7 +16,7 @@ function internauteEstConnecte(){
 function internauteEstConnecteEstAdmin(){
     // si l'internaute connecté a un statut égal a 1, il est donc administrateur, sinon => user 
     // Cette fonction permettra par la suite de bloquer des pages, a ceux qui n'en on pas le droit
-    if(internauteEstConnecte() && $_SESSION['user']['statut'] == 1)
+    if(internauteEstConnecte() && $_SESSION['user']['status'] == 1)
     {
         return true;
     }else{

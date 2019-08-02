@@ -7,7 +7,6 @@ require_once("inc/init.inc.php");
 
 
 
-require_once("inc/header.inc.php");
 
 
 
@@ -15,6 +14,8 @@ if (isset($_GET['action']) && $_GET['action'] == 'deconnexion') {
     session_destroy();
     header('Location: acceuil.php');
 }
+require_once("inc/header.inc.php");
+
 
 
 

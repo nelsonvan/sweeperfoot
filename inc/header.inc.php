@@ -1,8 +1,13 @@
+<?php 
+require_once("init.inc.php")
+
+
+?>
 <!DOCTYPE html>
 <html lang="Fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Lien vers mon fichier CSS -->
     <link rel="stylesheet" href="css/style-acceuil.css">
@@ -20,7 +25,7 @@
    <img class="offset-md-6" src="img/ballon3.gif" href="">
     </div>
    <div class="container-fluid">
-       <header class="col-md-12">
+       <header class=" col-md-12">
        <nav class=" col-md-12 navbar navbar-expand-lg navbar-info bg-dark mt-4">
        
   <a class="navbar-brand text-success" href="#">SweeperFootball</a>
@@ -34,7 +39,8 @@
       </li>
     
       <li class="nav-item active">
-        <a class="color-link nav-link text-light ml-3" href="actualite.php">Actualite <span class="sr-only">Aactualite</span></a>
+        <a class="color-link nav-link text-light ml-3" href="actualite.php"                  
+        >Actualite <span class="sr-only">Aactualite</span></a>
       </li>
     
         <!-- <li class="nav-item">
@@ -89,6 +95,9 @@
 <div class="container">
   <h2 class="text-center mt-4">Welcome to SweeperFootball</h2>
 </div>
+<script>
+
+</script>
 
 </header>
    </div>
