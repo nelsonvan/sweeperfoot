@@ -20,8 +20,9 @@
    <img class="offset-md-6" src="img/ballon3.gif" href="">
     </div>
    <div class="container-fluid">
-       <header>
-       <nav class="navbar navbar-expand-lg navbar-info bg-dark mt-4">
+       <header class="col-md-12">
+       <nav class=" col-md-12 navbar navbar-expand-lg navbar-info bg-dark mt-4">
+       
   <a class="navbar-brand text-success" href="#">SweeperFootball</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
