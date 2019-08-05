@@ -33,9 +33,12 @@ if($_POST){
     }
   
     // Si je n'est aucun message d'erreur qui s'affiche on redirige vers la page profile
-    if (empty($pseudoError) && empty($emailError) && empty($passwordError))
+    if (empty($pseudoError) && empty($emailError) && empty($passwordError) && $user['status'] == 1)
     {
+      header('Location:backOffice/admin.php');
+    }else {
       header('Location:profil.php');
+      # code...
     }
   
 
@@ -74,7 +77,7 @@ if($_POST){
   <?php echo  $passwordError; ?>
     <input type="password" class="form-control mt-2" id="exampleInputPw" placeholder="Mot de passe"  name="userPw">
   </div>
-  <button  class="btn  offset-md-5" value="Envoyer" type="submit" >Connexion</button>
+  <button   class="btn  offset-md-5"  type="submit" >Connexion</button>
 </form>
 </body>
 </html>

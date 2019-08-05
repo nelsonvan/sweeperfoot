@@ -9,11 +9,11 @@ require_once("init.inc.php")
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Lien vers mon fichier CSS -->
-    <link rel="stylesheet" href="css/style-acceuil.css">
     <!-- Lien CDN BootStrap -->
      <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-C++cugH8+Uf86JbNOnQoBweHHAe/wVKN/mb0lTybu/NZ9sEYbd+BbbYtNpWYAsNP" crossorigin="anonymous">
     
+    <!-- Lien vers mon fichier CSS -->
+    <link rel="stylesheet" href="css/style-acceuil.css">
     
     <title>SweeperFootball</title>
 </head>
