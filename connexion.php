@@ -58,7 +58,7 @@ if($_POST){
 <body>
 </header>   
 <div class="container col-md-4 mt-5" style="color: white;">
- <h1 class="text-center text-danger">Connexion</h1>  
+ <h1 class="text-center text-danger">Connexio</h1>  
  <?=  $validate ?>
  <div class="border"></div> 
 <form class="mt-5"  method="post" action="">
