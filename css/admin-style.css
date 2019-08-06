@@ -96,3 +96,8 @@ th{
 td{
     background:#063e76;
 }
+/* page form_article */
+
+form.form-article{
+    margin-top: 350px!important;
+}
