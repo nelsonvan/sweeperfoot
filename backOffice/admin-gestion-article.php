@@ -2,6 +2,17 @@
 require_once("../inc/init.inc.php");
 // Variable d'affichage 
 $contenue = "";
+
+if (isset($_GET['action']) && $_GET['action'] == 'suppression' && isset($_GET['id'])){
+
+    $article_delete = $bdd->prepare("DELETE FROM articles WHERE id_article = :id_article");
+    // Je recupere l'id qui se trouve dans l'URL
+    $article_delete->bindValue(':id_article', $_GET['id'], PDO::PARAM_INT);
+
+    
+
+    $article_delete->execute();
+}
 // rquete de selection 
 $resultat = $bdd->query("SELECT * FROM articles");
 // boucle while qui affiche les article de la bdd
@@ -15,7 +26,7 @@ while ($articles = $resultat->fetch(PDO::FETCH_ASSOC)) {
   $contenu .= '<td scope="col" class="text-center">' . $articles['link'] . '</td>';
   $contenu .= '<td  scope="col" class="text-center"><img class="imgAdmin" src="../img/'.$articles['photo'].'">"</td>';
   $contenu .= '<td class="text-center"><a href="form_article.php?action=modif"><i class="far fa-edit text-warning fa-2x"></i></a></td>';
-  $contenu .= '<td  scope="col" class="text-center"><a class="return" href="?action=suppression&id=' . $articles['id_article'] . '" onClick="return confirm(\'Etes-vous sûr ?\');"><i
+  $contenu .= '<td  scope="col" class="text-center"><a class="return"  href="?action=suppression&id=' . $articles['id_article'] . '" onClick="return confirm(\'Etes-vous sûr ?\');"><i
   class="fas fa-trash-alt fa-2x text-danger"></i></a></td>';
     $contenu .= '</tr>';
     $contenu .= '</div>';
@@ -25,16 +36,7 @@ while ($articles = $resultat->fetch(PDO::FETCH_ASSOC)) {
 // ---------------SUPPRESSION DE PRODUIT-----------------------
 // Si mon action existe et que l'action est egale à la suppression et mon Id existe
 // je lance ma requete de suppression, il faut if (isset($_GET['action'])+ && $_GET['action'] == 'suppression' && isset($_GET['id']))
-if (isset($_GET['action']) && $_GET['action'] == 'suppression' && isset($_GET['id'])){
 
-    $article_delete = $bdd->prepare("DELETE FROM articles WHERE id_article = :id_article");
-    // Je recupere l'id qui se trouve dans l'URL
-    $article_delete->bindValue(':id_article', $_GET['id'], PDO::PARAM_INT);
-
-    
-
-    $article_delete->execute();
-}
 
 ?>
 <!DOCTYPE html>
@@ -55,7 +57,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'suppression' && isset($_GET['i
 <body>
     
      <div class="container mt-5">
-        <h1 class="text-center mb-5">Gestion article</h1>
+        <h1 class="text-center mb-5 bg-secondary">Gestion article</h1>
       
                 <div class="row">
             <div class="col-md-6">
