@@ -20,13 +20,13 @@ while ($articles = $resultat->fetch(PDO::FETCH_ASSOC)) {
     // je crochette les champs pour les afficher via la varialble d'affichage
     $contenu .= '<div class="articleAdmin">';
     $contenu .= '<tr>';
-    $contenu .= '<td scope="col" class="text-center">' . $articles['id_article'] . '</td>';
-  $contenu .= '<td scope="col" class="text-center">' . $articles['title'] . '</td>';
-  $contenu .= '<td scope="col" class="text-center text-justify">' . $articles['content'] . '</td>';
-  $contenu .= '<td scope="col" class="text-center">' . $articles['link'] . '</td>';
-  $contenu .= '<td  scope="col" class="text-center"><img class="imgAdmin" src="../img/'.$articles['photo'].'">"</td>';
-  $contenu .= '<td class="text-center"><a href="form_article.php?action=modif"><i class="far fa-edit text-warning fa-2x"></i></a></td>';
-  $contenu .= '<td  scope="col" class="text-center"><a class="return"  href="?action=suppression&id=' . $articles['id_article'] . '" onClick="return confirm(\'Etes-vous sûr ?\');"><i
+    $contenu .= '<td scope="col" class="array-article text-center">' . $articles['id_article'] . '</td>';
+  $contenu .= '<td scope="col" class="array-article  text-center">' . $articles['title'] . '</td>';
+  $contenu .= '<td scope="col" class="array-article  text-center text-justify">' . $articles['content'] . '</td>';
+  $contenu .= '<td scope="col" class="array-article  text-center">' . $articles['link'] . '</td>';
+  $contenu .= '<td  scope="col" class="array-article  text-center"><img class="imgAdmin" src="../img/'.$articles['photo'].'">"</td>';
+  $contenu .= '<td class="array-article  text-center"><a href="form_article.php?action=modif"><i class="far fa-edit text-warning fa-2x"></i></a></td>';
+  $contenu .= '<td  scope="col" class="array-article  text-center"><a class="return"  href="?action=suppression&id=' . $articles['id_article'] . '" onClick="return confirm(\'Etes-vous sûr ?\');"><i
   class="fas fa-trash-alt fa-2x text-danger"></i></a></td>';
     $contenu .= '</tr>';
     $contenu .= '</div>';
@@ -74,13 +74,13 @@ while ($articles = $resultat->fetch(PDO::FETCH_ASSOC)) {
         <table class="table table-dark table-bordered mt-5">
             <thead>
                 <tr>
-                    <th scope="col" class="text-center">N° d'article</th>
-                    <th scope="col" class="text-center">titre</th>
-                    <th scope="col" class="text-center">content</th>
-                    <th scope="col" class="text-center">link</th>
-                    <th scope="col" class="text-center">photo</th>
-                    <th scope="col" class="text-center">Modifie</th>
-                    <th scope="col" class="text-center">supprimer</th>
+                    <th scope="col" class="array-article text-center">N° d'article</th>
+                    <th scope="col" class="array-article  text-center">titre</th>
+                    <th scope="col" class="array-article  text-center">content</th>
+                    <th scope="col" class="array-article  text-center">link</th>
+                    <th scope="col" class="array-article  text-center">photo</th>
+                    <th scope="col" class="array-article  text-center">Modifie</th>
+                    <th scope="col" class="array-article  text-center">supprimer</th>
                 
                 </tr>
             </thead>

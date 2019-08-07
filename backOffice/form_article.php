@@ -70,6 +70,12 @@ if($_POST)
 </head>
 <body>
     <h1 class="text-center bg-success">Formulaire article</h1>
+    <div class="row">
+            <div class="col-md-12">
+                <a href="admin-gestion-article.php" class="return btn btn-outline-dark" title="retour">
+                    <i class="far fa-hand-point-left fa-2x fa-le"></i>
+                </a>
+            </div>
 <form class="form-article col-md-6 offset-3 mt-4" method="post">
         <div class="col" name="idArticle" value="">
             <input type="hidden">
@@ -109,7 +115,7 @@ if($_POST)
         </div>
         <div class="row mt-3">
             <div class="col">
-                <button type="submit"
+                <button type="submit" 
                     class="btn btn-lg btn-outlines-secondary border border-secondary hover rounded-pill">Validez</button>
             </div>
     </form>
