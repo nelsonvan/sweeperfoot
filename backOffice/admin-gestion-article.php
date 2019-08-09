@@ -22,8 +22,8 @@ while ($articles = $resultat->fetch(PDO::FETCH_ASSOC)) {
     $contenu .= '<tr>';
     $contenu .= '<td scope="col" class="array-article text-center">' . $articles['id_article'] . '</td>';
   $contenu .= '<td scope="col" class="array-article  text-center">' . $articles['title'] . '</td>';
-  $contenu .= '<td scope="col" class="array-article  text-center text-justify">' . $articles['content'] . '</td>';
   $contenu .= '<td scope="col" class="array-article  text-center">' . $articles['link'] . '</td>';
+  $contenu .= '<td scope="col" class="array-article  text-center text-justify">' . $articles['content'] . '</td>';
   $contenu .= '<td  scope="col" class="array-article  text-center"><img class="imgAdmin" src="../img/'.$articles['photo'].'">"</td>';
   $contenu .= '<td class="array-article  text-center"><a href="form_article.php?action=modif"><i class="far fa-edit text-warning fa-2x"></i></a></td>';
   $contenu .= '<td  scope="col" class="array-article  text-center"><a class="return"  href="?action=suppression&id=' . $articles['id_article'] . '" onClick="return confirm(\'Etes-vous sûr ?\');"><i
@@ -66,7 +66,7 @@ while ($articles = $resultat->fetch(PDO::FETCH_ASSOC)) {
                 </a>
             </div>
             <div class="col-md-6">
-                <a class="offset-10 mb-5 btn btn-outline-dark" href="form_article.php" title="ajouter un RDV">
+                <a class="offset-10 mb-5 btn btn-outline-dark" href="form_article.php" title="ajouter un Article">
                     <i class="fas fa-pencil-alt fa-2x"></i>
                 </a>
             </div>
@@ -76,8 +76,8 @@ while ($articles = $resultat->fetch(PDO::FETCH_ASSOC)) {
                 <tr>
                     <th scope="col" class="array-article text-center">N° d'article</th>
                     <th scope="col" class="array-article  text-center">titre</th>
-                    <th scope="col" class="array-article  text-center">content</th>
                     <th scope="col" class="array-article  text-center">link</th>
+                    <th scope="col" class="array-article  text-center">content</th>
                     <th scope="col" class="array-article  text-center">photo</th>
                     <th scope="col" class="array-article  text-center">Modifie</th>
                     <th scope="col" class="array-article  text-center">supprimer</th>
