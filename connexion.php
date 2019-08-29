@@ -1,10 +1,15 @@
 <?php require_once('inc/init.inc.php');
 extract($_POST);
 
+
+
 $pseudoError = '';
 $emailError = '';
 $passwordError = '';
  // Pa
+
+
+
 
  if (isset($_GET['action']) && $_GET['action'] == 'validate') {
   $validate .= '<div class="col-md-6 offset-md-3 alert alert-success text-dark">Félicitations, vous etes inscrits sur le site. Vous pouvez dès a présent vous connecter</div>';
@@ -18,7 +23,7 @@ if($_POST){
   
   
   
-  '<pre>'; echo print_r($user) ; '</pre>';
+//  echo '<pre>'; print_r($user) ; echo '</pre>';
     if(empty($userPseudo) || $userPseudo != $user['userPseudo'])
     {
       $pseudoError .=  '<small class="text-danger"> ** Saisissez un Pseudo valide</small>';
@@ -36,13 +41,11 @@ if($_POST){
     if (empty($pseudoError) && empty($emailError) && empty($passwordError) && $user['status'] == 1)
     {
       header('Location:backOffice/admin.php');
-    }else {
-      header('Location:profil.php');
-      # code...
+  
     }
   
 
-} //
+} 
 ?>
 
 <?php require_once('inc/nav.secondaire.inc.php');?>
@@ -58,7 +61,7 @@ if($_POST){
 <body>
 </header>   
 <div class="container col-md-4 mt-5" style="color: white;">
- <h1 class="text-center text-danger">Connexio</h1>  
+ <h1 class="text-center text-danger">Connexion</h1>  
  <?=  $validate ?>
  <div class="border"></div> 
 <form class="mt-5"  method="post" action="">

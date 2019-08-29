@@ -66,8 +66,8 @@ a>.btn .btn-danger .rounded-pill .offset-10 {
 
 /********************************** DECONNEXION **********************************/
 .admin-btn {
-    top: 0;
-    left: 0;
+    top: 20;
+    left: 30px;
     transition: all .15s linear 0s;
     position: relative;
     display: inline-block;
@@ -75,10 +75,13 @@ a>.btn .btn-danger .rounded-pill .offset-10 {
     background-color: #befcfe;
 
     text-transform: uppercase;
-    color: grey;
+    color: rgba(240, 74, 74, 0.678);
     font-family: arial;
     letter-spacing: 1px;
-    box-shadow: -6px 6px 0 black;
+    box-shadow: -4px 4px 0 black;
+}
+.admin-btn:hover{
+    color: red;
 }
 .list-group{
     margin-bottom: 50px;

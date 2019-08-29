@@ -2,6 +2,12 @@
 require_once("../inc/init.inc.php");
 
 
+if (isset($_GET['action']) && $_GET['action'] == 'deconnexion') {
+    session_destroy();
+    header("Location:../acceuil.php");
+   }
+  
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -16,16 +22,16 @@ require_once("../inc/init.inc.php");
 <body>
     <h1 class="text-center text-success">Ma page admin</h1>
   
-    
+   <a href="?action=deconnexion"><button type="button"  class="admin-btn btn-dark offset-md-2 mt-4">Deconnexion</button></a> 
     <div class="list-group listAdmin" style="width:30rem;">
             <a href="admin-gestion-article.php"
                 class="list-group-item list-group-item-action primary text-center btn-outline-primary  hover">Gestion des article</a>
             <a href="admin-gestion-user.php"
                 class="list-group-item list-group-item-action primary text-center btn-outline-primary  hover">Gestion
                  user</a>
-            <a href="gestion_temoignage.php"
+            <a href="admin-gestion-contact.php"
                 class="list-group-item list-group-item-action primary text-center btn-outline-primary  hover">Gestion
-                des
+                de
                 contact</a>
 
        
