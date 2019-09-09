@@ -54,13 +54,16 @@ if($_POST)
    {
      
       $emailError .= '<small class="text-danger"> ** Votre email n\'est pas valide</small>';
-      $confMdpError .= '<small class="text-danger"> ** Votre email n\'est pas valide</small>';
+   
 
    }
-   if (empty($userPw == $userPwConf)) 
+   if (empty($userPw) || $userPw  !=  $userPwConf) 
    {
      
        $mdpError .= '<small class="text-danger"> ** Votre Mdp n\'est pas valide</small>';
+       $confMdpError .= '<small class="text-danger"> ** Votre Mot de passe n\'est pas valide</small>';
+
+      
 
     }
 

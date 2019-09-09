@@ -58,7 +58,7 @@ class="fas fa-trash-alt fa-2x text-danger"></i></a></td>';
                 </a>
             </div>
             <div class="col-md-6">
-                <a class="offset-10 mb-5 btn btn-outline-dark" href="form_article.php" title="ajouter un Article">
+                <a class="offset-10 mb-5 btn btn-outline-dark" href="form_user.php" title="ajouter un Article">
                     <i class="fas fa-pencil-alt fa-2x"></i>
                 </a>
             </div>

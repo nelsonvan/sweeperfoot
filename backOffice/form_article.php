@@ -33,7 +33,7 @@ if($_POST)
 
         if(empty($titleError) && empty($linkError) && empty($photoError))
      {
-         // assainissement des saisies de l'internaute
+        // assainissement des saisies de l'internaute
         foreach ($_POST as $indice => $valeur) {
             $_POST[$indice] = htmlspecialchars($valeur, ENT_QUOTES);
         }
